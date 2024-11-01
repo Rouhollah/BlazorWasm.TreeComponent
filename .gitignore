@@ -1,0 +1,55 @@
+## Ignore Visual Studio temporary files, build results, and
+## various settings
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+## Ignore NuGet Packages
+*.nupkg
+*.snupkg
+**/packages/
+# Uncomment if you have tasks that download packages to the
+# solution folder, rather than the project's folder
+# packages/*
+
+# Ignore .NET Core generated files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore JetBrains Rider files
+.idea/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.generated.cs
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+.history/
+.vscode-test/
+
+# Log files
+*.log
