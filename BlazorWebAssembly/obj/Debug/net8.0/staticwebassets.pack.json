@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\projects\\dotnetCoreProject\\BlazorWebAssembly\\BlazorWebAssembly\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\projects\\dotnetCoreProject\\BlazorWebAssembly\\BlazorWebAssembly\\obj\\Debug\\net8.0\\compressed\\pqpoauy925.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "D:\\projects\\dotnetCoreProject\\BlazorWebAssembly\\BlazorWebAssembly\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorWebAssembly.styles.css",
+      "PackagePath": "staticwebassets\\BlazorWebAssembly.styles.css"
+    },
+    {
+      "Id": "D:\\projects\\dotnetCoreProject\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\projects\\dotnetCoreProject\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\projects\\dotnetCoreProject\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\projects\\dotnetCoreProject\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\projects\\dotnetCoreProject\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "D:\\projects\\dotnetCoreProject\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\projects\\dotnetCoreProject\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\js\\Observer.js",
+      "PackagePath": "staticwebassets\\js\\Observer.js"
+    },
+    {
+      "Id": "D:\\projects\\dotnetCoreProject\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorWebAssembly.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorWebAssembly.props",
+      "PackagePath": "build\\BlazorWebAssembly.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorWebAssembly.props",
+      "PackagePath": "buildMultiTargeting\\BlazorWebAssembly.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorWebAssembly.props",
+      "PackagePath": "buildTransitive\\BlazorWebAssembly.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

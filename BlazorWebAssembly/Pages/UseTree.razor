@@ -1,0 +1,60 @@
+﻿@page "/usetree"
+@using BlazorWasm.TreeComponent
+
+<h3>UseTree</h3>
+<TreeComponent Expand="true" ShowCheckbox="true" TreeModel="@tree"></TreeComponent>
+@code {
+    private TreeNode<int> tree = new TreeNode<int>
+        {
+            Id = 1,
+            Title = "root",
+            IsChecked = true,
+            IsExpanded = true,
+            Children = new List<TreeNode<int>>
+            {
+                new TreeNode<int> {
+                Id = 11,
+                Title = "leaf11",
+                IsChecked = true,
+                IsExpanded = true,
+                Children = new List<TreeNode<int>>
+                {
+                     new TreeNode<int>
+                     {
+                         Id = 111,
+                         Title = "leaf111",
+                         IsChecked = true,
+                         IsExpanded = true,
+                         Children =new List<TreeNode<int>>
+                         {
+                             new TreeNode<int>
+                             {
+                                 Id = 1111,
+                                 Title = "leaf1111",
+                                 IsChecked = true,
+                                 IsExpanded = true,
+                                 Children = new List<TreeNode<int>>(),
+                             },
+                             new TreeNode<int>
+                             {
+                                 Id = 1112,
+                                 Title = "leaf1112",
+                                 IsChecked = true,
+                                 IsExpanded = true,
+                                 Children = new List<TreeNode<int>>(),
+                             }
+                         }
+                },
+                new TreeNode<int>
+                {
+                    Id = 12,
+                    Title = "leaf12",
+                    IsChecked = true,
+                    IsExpanded = true,
+                    Children = new List<TreeNode<int>>()
+                }
+            }
+            }
+        }
+    };
+}

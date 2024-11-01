@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\projects\\dotnetCoreProject\\BlazorWebAssembly\\BlazorWasm.TreeComponent\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorWasm.TreeComponent.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BlazorWasm.TreeComponent.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\projects\\dotnetCoreProject\\BlazorWebAssembly\\BlazorWasm.TreeComponent\\wwwroot\\background.png",
+      "PackagePath": "staticwebassets\\background.png"
+    },
+    {
+      "Id": "D:\\projects\\dotnetCoreProject\\BlazorWebAssembly\\BlazorWasm.TreeComponent\\wwwroot\\exampleJsInterop.js",
+      "PackagePath": "staticwebassets\\exampleJsInterop.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorWasm.TreeComponent.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorWasm.TreeComponent.props",
+      "PackagePath": "build\\BlazorWasm.TreeComponent.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorWasm.TreeComponent.props",
+      "PackagePath": "buildMultiTargeting\\BlazorWasm.TreeComponent.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorWasm.TreeComponent.props",
+      "PackagePath": "buildTransitive\\BlazorWasm.TreeComponent.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

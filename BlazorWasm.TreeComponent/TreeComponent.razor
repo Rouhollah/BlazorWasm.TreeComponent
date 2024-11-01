@@ -1,0 +1,54 @@
+﻿@typeparam T
+
+<div class="tree-root">
+    <TreeNodeComponent T="T" Node="TreeModel"
+                       ShowCheckbox="ShowCheckbox"
+                       IsExpanded="Expand"
+                       OnNodeChecked="HandleNodeChecked" />
+</div>
+
+@code {
+    [Parameter] public TreeNode<T> TreeModel { get; set; } = new();
+    [Parameter] public bool ShowCheckbox { get; set; } = true;
+    [Parameter] public bool Expand { get; set; } = true;  // Initial expand/collapse state
+    [Parameter] public EventCallback<List<TreeNode<T>>> OnCheckedNodesChanged { get; set; }
+
+    // Method to gather checked nodes
+    private void HandleNodeChecked(TreeNode<T> node)
+    {
+        SyncChildrenWithParent(node);
+        var flatCheckedNodes = GetFlatCheckedNodes(TreeModel.Children);
+        OnCheckedNodesChanged.InvokeAsync(flatCheckedNodes);
+    }
+
+    // Sync child nodes with parent state
+    private void SyncChildrenWithParent(TreeNode<T> node)
+    {
+        if (node.Children != null && node.Children.Any())
+        {
+            foreach (var child in node.Children)
+            {
+                child.IsChecked = node.IsChecked;
+                SyncChildrenWithParent(child);
+            }
+        }
+    }
+
+    // Collect checked nodes in a flat list
+    private List<TreeNode<T>> GetFlatCheckedNodes(List<TreeNode<T>> nodes)
+    {
+        var checkedNodes = new List<TreeNode<T>>();
+        foreach (var node in nodes)
+        {
+            if (node.IsChecked)
+            {
+                checkedNodes.Add(node);
+            }
+            if (node.Children != null && node.Children.Any())
+            {
+                checkedNodes.AddRange(GetFlatCheckedNodes(node.Children));
+            }
+        }
+        return checkedNodes;
+    }
+}

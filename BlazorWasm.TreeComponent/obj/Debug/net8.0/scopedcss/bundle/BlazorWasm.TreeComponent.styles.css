@@ -1,0 +1,25 @@
+/* _content/BlazorWasm.TreeComponent/TreeComponent.razor.rz.scp.css */
+/* _content/BlazorWasm.TreeComponent/TreeNodeComponent.razor.rz.scp.css */
+.node-children[b-0dqvs9igbl] {
+    margin: 0 1rem;
+}
+.node-toggle[b-0dqvs9igbl] {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+    .node-toggle[b-0dqvs9igbl]::before {
+        content: "\25B6";
+        color: black;
+        display: inline-block;
+        margin:0 6px;
+    }
+
+    .node-toggle-down[b-0dqvs9igbl]::before {
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Safari */
+        transform: rotate(90deg);
+    }

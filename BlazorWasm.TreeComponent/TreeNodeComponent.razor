@@ -1,0 +1,62 @@
+﻿@typeparam T
+
+<div class="tree-node">
+    <div class="node-header">
+        @if (ShowCheckbox)
+        {
+            <input type="checkbox" checked="@Node.IsChecked" @onchange="HandleCheckboxChanged" />
+        }
+
+        @if(Node.Children != null && Node.Children.Any())
+        {
+            <span class="@nodeToggle" @onclick="ToggleExpand"></span>
+        }
+       
+
+        <span class="node-title">@Node.Title</span>
+    </div>
+
+    @if (IsExpanded && Node.Children != null && Node.Children.Any())
+    {
+        <div class="node-children">
+            @foreach (var child in Node.Children)
+            {
+                <TreeNodeComponent T="T" Node="child"
+                                   ShowCheckbox="ShowCheckbox"
+                                   IsExpanded="IsExpanded"
+                                   OnNodeChecked="OnNodeChecked" />
+            }
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public TreeNode<T> Node { get; set; }
+    [Parameter] public bool ShowCheckbox { get; set; } = true;
+    [Parameter] public bool IsExpanded { get; set; } = false;
+    [Parameter] public EventCallback<TreeNode<T>> OnNodeChecked { get; set; }
+    private string nodeToggle = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        showToggle();
+    }
+
+    private void ToggleExpand()
+    {
+        IsExpanded = !IsExpanded;
+        showToggle();
+    }
+
+    private void HandleCheckboxChanged(ChangeEventArgs e)
+    {
+        Node.IsChecked = (bool)e.Value;
+        OnNodeChecked.InvokeAsync(Node);
+    }
+
+    private void showToggle()
+    {
+        nodeToggle = IsExpanded ? "node-toggle node-toggle-down" : "node-toggle";
+    }
+}
